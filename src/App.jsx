@@ -44,7 +44,7 @@
 =============================================*/
 import * as React from 'react';
 import axios from 'axios'
-import { LoginForm } from './forms/loginForm';
+import { LoginForm } from './forms/loginFormUncontrolled';
 import { SearchForm } from './forms/searchForm';
 
 const API_ENDPOINT = 'https://hn.algolia.com/api/v1/search?query=';

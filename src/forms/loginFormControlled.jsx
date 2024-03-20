@@ -13,6 +13,10 @@ Login form functional component
 
   - Whenever we want to access/read an HTML element in JSX, we 
     would be using React's useRef Hook:
+
+  - Controlled React form -  each input field has a handler and 
+    gets controlled by React and does not manage its internal 
+    native HTML state anymore:
 */
 
 import * as React from 'react';
@@ -44,7 +48,7 @@ const LoginForm = () =>{
         </div>
         <div>
           <label htmlFor="password">Password</label>
-           <input id="password" type="password" value={password} onChange={handlePassword} />
+           <input id="password" type="password" value={password}  />
         </div>
        <button type="submit">Login</button>
       </form>
