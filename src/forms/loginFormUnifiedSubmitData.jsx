@@ -23,6 +23,17 @@ Login form functional component
     state comes with a re-render of the form. 
 
   - to submit the data add prop to LoginForm  
+
+  - Controlled React form -  each input field has a handler and 
+    gets controlled by React and does not manage its internal 
+    native HTML state anymore. 
+
+    By giving the input the value from React's state, it doesn't use 
+    its internal state anymore, but the state you provided from React.
+     Now the initial state should be seen for the input field and for 
+     the output paragraph once you start the application. Also when 
+     you type something in the input field, both input field and 
+     output paragraph are synchronized by React's state.
     
 */
 
@@ -76,7 +87,7 @@ const LoginForm = ({onLogin}) =>{
     return(
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Value makesEmail is a controlled input </label>
            <input 
               id="email" 
               type="text" 

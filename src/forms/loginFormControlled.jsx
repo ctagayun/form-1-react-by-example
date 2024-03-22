@@ -16,7 +16,14 @@ Login form functional component
 
   - Controlled React form -  each input field has a handler and 
     gets controlled by React and does not manage its internal 
-    native HTML state anymore:
+    native HTML state anymore. 
+
+    By giving the input the value from React's state, it doesn't use 
+    its internal state anymore, but the state you provided from React.
+     Now the initial state should be seen for the input field and for 
+     the output paragraph once you start the application. Also when 
+     you type something in the input field, both input field and 
+     output paragraph are synchronized by React's state.
 */
 
 import * as React from 'react';
